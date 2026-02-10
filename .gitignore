@@ -50,3 +50,6 @@ weaviate_data/
 # Misc
 tmp/
 .cache/
+
+# Allow example env files
+!.env.example
