@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,400;0,600;0,700;1,400&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Remove scroll bars */
+html {
+  overflow-x: hidden;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+/* Hide scrollbars but keep functionality */
+::-webkit-scrollbar {
+  width: 0px;
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: transparent;
+}
+
+/* For Firefox */
+html {
+  scrollbar-width: none;
+}
+
+.react-colorful {
+  height: 100px;
+}
+
+/* Custom font classes */
+.font-amiri {
+  font-family: 'Amiri', serif;
+}
+
+.font-georgia-pro {
+  font-family: 'Georgia Pro Condensed', Georgia, serif;
+}
+
+/* CSS Variables for dynamic theming */
+:root {
+  --font-oxtari: Amiri, serif;
+  --bg-oxtari: #ffffff;
+  --bg-alt-oxtari: #ffffff;
+  --text-oxtari: #000000;
+  --text-alt-oxtari: #023eba;
+  --primary-oxtari: #023eba;
+  --secondary-oxtari: #000000;
+  --warning-oxtari: #023eba;
+  --button-oxtari: #ffffff;
+  --button-hover-oxtari: #023eba;
+  --button-text-oxtari: #000000;
+  --button-text-alt-oxtari: #ffffff;
+}
+
+[data-theme="dark"] {
+  --bg-oxtari: #000000;
+  --bg-alt-oxtari: #023eba;
+  --text-oxtari: #ffffff;
+  --text-alt-oxtari: #ffffff;
+  --button-oxtari: #023eba;
+  --button-hover-oxtari: #ffffff;
+  --button-text-oxtari: #ffffff;
+  --button-text-alt-oxtari: #000000;
+}
