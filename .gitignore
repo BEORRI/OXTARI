@@ -66,3 +66,17 @@ node_modules/
 .next/
 dist/
 build/
+
+# Build artifacts / deps
+node_modules/
+.next/
+dist/
+build/
+__pycache__/
+*.pyc
+.venv/
+venv/
+weaviate_data/
+data/
+logs/
+*.log
